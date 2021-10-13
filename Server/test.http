@@ -1,0 +1,24 @@
+GET http://localhost:3000/cars
+###
+PATCH http://localhost:3000/cars/1
+Content-Type: application/json
+
+{
+    "status": "available"
+}
+###
+Delete http://localhost:3000/car/10
+###
+POST http://localhost:3000/cars
+Content-Type: application/json
+
+{
+      "title": "Bargain!",
+      "image": "http://localhost:3000/images/car2.png",
+      "status": "available",
+      "price": "8700",
+      "miles": 113666,
+      "year_of_make": 2007,
+      "description": "A bit worn, but still drives. For the adventurous person who is willing to take risks and eager to have new experiences.",
+      "owner": 2
+    }
